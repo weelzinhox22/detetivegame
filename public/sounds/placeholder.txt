@@ -1,0 +1,3 @@
+Place your background-music.mp3 file here
+
+Por favor, coloque o arquivo background-music.mp3 nesta pasta para ativar o áudio de fundo do aplicativo.

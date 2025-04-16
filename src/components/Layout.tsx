@@ -1,9 +1,9 @@
-
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Outlet, useLocation, useNavigate, Link } from "react-router-dom";
 import { Home, User, FolderOpen, BarChart3 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import BackgroundAudio from "./BackgroundAudio";
 
 export default function Layout() {
   const location = useLocation();
@@ -19,6 +19,9 @@ export default function Layout() {
   
   return (
     <div className="flex flex-col h-screen w-full max-w-md mx-auto bg-noir-dark relative overflow-hidden">
+      {/* Background Audio */}
+      <BackgroundAudio audioSrc="/sounds/background-music.mp3" />
+
       {/* Conteúdo principal */}
       <motion.main 
         className="flex-1 overflow-y-auto p-4 pb-16"
